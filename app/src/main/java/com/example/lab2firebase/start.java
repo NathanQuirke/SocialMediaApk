@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class start extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private static final int RC_SIGN_IN = 123;
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         "name = " + user.getDisplayName() + "\n" +
                         "email = " + user.getEmail() + "\n" +
                         "id = " + user.getUid());
-                startActivity(new Intent(MainActivity.this, Reading.class));
+                startActivity(new Intent(start.this, Reading.class));
             } else {
                 if (response == null) {
                     System.out.println("Sign in cancelled");
