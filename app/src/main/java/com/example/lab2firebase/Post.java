@@ -44,10 +44,9 @@ public class Post extends AppCompatActivity {
                 savePost();
                 return true;
             default:
-                return super.onOptionsItemSelected(item);
+            return super.onOptionsItemSelected(item);
         }
     }
-
 
     private void savePost() {
         String title = editTextTitle.getText().toString();

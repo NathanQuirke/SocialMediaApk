@@ -5,7 +5,6 @@ import androidx.annotation.Keep;
 public class Details {
     private String title;
     private String description;
-    private Object date;
 
     public Details() {
         //empty constructor
@@ -25,11 +24,4 @@ public class Details {
     }
 
 
-    public Object getDate() {
-        return date;
-    }
-
-    public void setDate(Object date) {
-        this.date = date;
-    }
 }
